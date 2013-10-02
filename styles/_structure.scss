@@ -1,0 +1,15 @@
+#content {
+
+	min-height: 600px;
+
+	&.loading {
+		background: {
+			image: url("../images/loading.gif");	
+			repeat: no-repeat;
+			position: 50% 50%;
+			size: 70px;
+		}
+
+		
+	}
+}

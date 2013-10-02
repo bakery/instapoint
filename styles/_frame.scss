@@ -1,0 +1,44 @@
+/* overrides for the iframe target */
+
+
+.frame-only { display: none; }
+.frame .frame-only { display: inherit; }
+.hide-in-frame { display: inherit; }
+.frame .hide-in-frame { display: none; }
+
+
+body.frame {
+	border: solid 1px #ccc;
+}
+
+.frame #content {
+	min-height: 300px;
+}
+
+.frame header {
+	display: none;
+}
+
+.frame .container {
+	padding: 0;
+}
+
+.frame .viewer .map {
+	height: 300px;
+}
+
+.frame footer {
+	margin: 0;
+	padding: 7px;
+}
+
+.frame h3 {
+	font-size: 16px;
+	padding: 14px 10px;
+	margin: 0;
+	font-weight: 300;
+
+	.address {
+		display: block;
+	}
+}

@@ -1,0 +1,88 @@
+@import "compass/css3/border-radius";
+@import "compass/css3/box-shadow";
+@import "compass/css3/images";
+@import "compass/css3/transition";
+
+
+
+.form-section {
+
+	margin-top: 40px;
+
+	label {
+		margin-right: 20px;
+		font-weight: bold;
+		vertical-align: middle;
+		font-size: 20px;
+	}
+
+	input {
+		@include border-radius(3px);
+		line-height: 20px;
+		padding: 8px;
+	}
+}
+
+.section-header {
+	margin-bottom: 20px;
+}
+
+.select-categories {
+
+	opacity: 1;
+	@include transition(all .5s ease);
+
+	&.disabled {
+		opacity: 0.0;
+		height: 0;
+		overflow: hidden;
+	}
+}
+
+.find-location {
+	input {
+		width: 100%;
+		vertical-align: middle;
+	}
+}
+
+.step-number {
+	width: 28px;
+	height: 28px;
+	border: solid 3px $header-colour;
+	@include border-radius(20px);
+	text-align: center;
+	vertical-align: middle;
+	display: inline-block;
+	line-height: 22px;
+	margin-right: 14px;
+	font-size: 14px;
+}
+
+button {
+	margin: 30px auto 50px auto;
+	height: 40px;
+	font-size: 20px;
+	color: white;
+    @include background-image(linear-gradient(#5AB953 0%, #49A34B 100%));
+    @include box-shadow(inset 0px 1px 0 1px rgba(255,255,255,0.1), 0px 2px 0 -1px rgba(51,51,51, 0.5));
+    @include border-radius(3px);
+    border: 1px solid #49A34B;
+
+    &:hover{
+        @include background-image(linear-gradient(#49A34B 60%, #5AB953 100%));
+        @include box-shadow(inset 0 1px 1px 0 rgba(0,0,0,.12));
+        border-color: rgba(73,163,75,0.8);
+    }
+}
+
+.section-separator {
+	width: 146px;
+	height: 24px;
+	margin: 0 auto 20px auto;
+	background:{
+        image: url('../images/sep.png');
+        repeat: no-repeat;
+        position: 50% 50%;      
+    }
+}

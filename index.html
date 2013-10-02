@@ -1,0 +1,36 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+	<link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet" type="text/css">
+</head>
+<body class="responsive">
+	<header class="hidden">
+		<div class="container">
+			<div class="row">
+				<div class="logo">
+					<a href="/">
+						<h1 class="title" title="Instapoint">Instapoint</h1><h3 class="subtitle" title="Local Maps for Tourism">Local Maps for Tourism</h3>
+					</a>
+				</div>
+			</div>
+			<!--div class="title-box"><h1 class="title">Instapoint</h1><h3 class="subtitle">Local Maps for Tourism</h3>
+			</div-->
+		</div>
+	</header>
+	
+	<div class="loading container" id="content"></div>
+	
+	<footer class="hide-in-frame">
+		<p>Built with love by <a href="http://thebakery.io">The Bakery</a>. Powered by <a href="http://www.ciceroos.it">CicerOOs</a>.</p>
+	</footer>
+
+	<footer class="frame-only">
+		Powered by <a target="_blank" href="http://www.ciceroos.it/">Ciceroos</a> & <a target="_blank" href="http://thebakery.io/">The Bakery</a>.
+	</footer>
+
+	<script src="https://maps.googleapis.com/maps/api/js?language=en&sensor=false&v=3&libraries=places"></script>
+	
+    <!-- build:js scripts/app.compiled.js -->
+    <script data-main="scripts/main" src="scripts/vendor/requirejs/require.js"></script>
+    <!-- endbuild -->
+</body>
